@@ -158,11 +158,6 @@ body {
   fill: currentColor;
 }
 
-/* .nav-icon:focus,
-.nav-icon:hover {
-  fill: #757575;
-} */
-
 .main-hero {
   background-image: linear-gradient(
       to right,
@@ -413,13 +408,13 @@ body {
   fill: #ffffff;
 }
 
-.regular-clients {
-  position: absolute;
-  width: 390px;
-  height: 42px;
-  left: 606px;
-  top: 2401px;
+.our-clients {
+  padding-bottom: 94px;
+  padding-top: 94px;
+  background-color: #ffffff;
+}
 
+.regular-clients {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -430,7 +425,50 @@ body {
   margin-top: 94px;
 }
 
+.clients-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border: 1px solid #2196f3;
+  fill: #2196f3;
+}
+
+.clients-icon {
+  fill: #afb1b8;
+  width: 106px;
+  height: 60px;
+}
+
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  fill: #2196f3;
+}
+
 .basement {
+  background: var(--background-color);
+}
+
+.basement-container {
   padding-top: 60px;
   padding-bottom: 60px;
   max-width: 1600px;
@@ -438,8 +476,6 @@ body {
   height: 252px;
   left: 0px;
   top: 2097px;
-
-  background: var(--background-color);
 }
 
 .footer-logo {
@@ -498,6 +534,13 @@ body {
 .address-link:hover,
 .address-link:focus {
   color: var(--accent-color);
+}
+
+.social-footer {
+  display: block;
+  padding-top: 72px;
+  padding-bottom: 100px;
+  margin-left: 70px;
 }
 
 /* ---------------portfolio page----------------- */
