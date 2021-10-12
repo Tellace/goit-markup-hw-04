@@ -97,6 +97,11 @@ body {
   margin-right: 50px;
 }
 
+.header-menu,
+.header-link.current {
+  color: #2196f3;
+}
+
 .link {
   text-decoration: none;
   display: block;
@@ -409,8 +414,9 @@ body {
 }
 
 .our-clients {
+  height: auto;
   padding-bottom: 94px;
-  padding-top: 94px;
+
   background-color: #ffffff;
 }
 
@@ -423,6 +429,7 @@ body {
   text-align: center;
   letter-spacing: 0.8px;
   margin-top: 94px;
+  margin-bottom: 50px;
 }
 
 .clients-list {
@@ -492,6 +499,8 @@ body {
 
 .footer-web {
   margin-right: 70px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .logo-foot {
@@ -532,7 +541,7 @@ body {
   color: var(--accent-color);
 }
 
-.footer-item:nth-last-child(3) {
+.footer-item:not(:last-child) {
   display: block;
   margin-bottom: 9px;
 }
@@ -552,6 +561,10 @@ body {
 .address-link:hover,
 .address-link:focus {
   color: var(--accent-color);
+}
+
+.social-footer {
+  margin-left: 70px;
 }
 
 .social-head {
@@ -612,6 +625,9 @@ body {
 
 .filter-btn {
   cursor: pointer;
+  padding-left: 22px;
+  padding-right: 22px;
+  height: 38px;
 }
 
 .filter-btn:hover,
@@ -622,11 +638,20 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .plate {
-  height: 404px;
   left: 215px;
   top: 262px;
   background: #ffffff;
 }
+
+.plate-link {
+  height: 404px;
+}
+
+.plate-link:hover,
+.plate-link:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .description {
   font-weight: bold;
   font-size: 18px;
@@ -680,10 +705,10 @@ body {
   border: 1px solid #eeeeee;
 }
 
-.plate:hover,
+/* .plate:hover,
 .plate:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
+} */
 
 .plate:nth-last-child(3n + 1) {
   margin-right: 0px;
