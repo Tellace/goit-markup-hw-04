@@ -416,6 +416,7 @@ body {
 .our-clients {
   height: auto;
   padding-bottom: 94px;
+  padding-top: 94px;
 
   background-color: #ffffff;
 }
@@ -428,7 +429,6 @@ body {
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.8px;
-  margin-top: 94px;
   margin-bottom: 50px;
 }
 
@@ -625,9 +625,6 @@ body {
 
 .filter-btn {
   cursor: pointer;
-  padding-left: 22px;
-  padding-right: 22px;
-  height: 38px;
 }
 
 .filter-btn:hover,
